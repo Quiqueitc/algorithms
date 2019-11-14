@@ -1,6 +1,6 @@
 package algorithms;
 /**
- *
+ * class node
  * @author wicho
  */
 public class node {
@@ -30,10 +30,5 @@ public class node {
         childreT[nuChildren]=S;
         children=childreT;
         nuChildren=nuChildren+1;
-    }
-    public void mostrar()
-    {
-        System.out.println("{"+info+"}");
-        //JOptionPane.showMessageDialog(null,"{"+info+"}");
     }
 }

@@ -7,13 +7,32 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 <BorderPane fx:controller="algorithms.algorithms"
             xmlns:fx="http://javafx.com/fxml" >
     <center>
         <VBox alignment="CENTER" spacing="5">
-            <TextField fx:id="text"></TextField>
-            <Button fx:id="btnA" text="Read txt"></Button>
-            <TextArea fx:id="txaA" text="Read"></TextArea>
+            <Label style="-fx-background-color: #ADCAF2; -fx-font-size: 13pt; -fx-text-fill:#FFFFFF; -fx-font-weight:bold;" text="You must upload a file with the next format (Separate with space, this only accept zeros and ones)" />
+
+
+            <Label  text="0  1  0  1&#10;1  0  1  1&#10;0  1  0  1&#10;1  1  1  0" prefWidth="90" prefHeight="90" maxHeight="90" maxWidth="90"></Label>
+
+            <Button fx:id="btnLF" text="Load File" ></Button>
+            <Label text="Select root or empty root default"></Label>
+            <TextField fx:id="text" visible="false" promptText="Select root or empty root default" ></TextField>
+            <HBox alignment="CENTER" spacing="5">
+            <Button fx:id="btnBFS" text="BFS" ></Button>
+            <Button fx:id="btnDFS" text="DFS" ></Button>
+            </HBox>
+            <HBox alignment="CENTER" spacing="5">
+                <VBox alignment="CENTER" spacing="5"><Label text="Data"></Label>
+                <TextArea fx:id="txaA" editable="false" text="Read"></TextArea>
+                </VBox>
+                <VBox alignment="CENTER" spacing="5">
+                <Label text="Road"></Label>
+                <TextArea fx:id="txaC" editable="false" text="Road"></TextArea>
+                </VBox>
+            </HBox>
         </VBox>
 
     </center>
