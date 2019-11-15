@@ -8,7 +8,7 @@ public class graph {
         root = new nodo(dato, null);
         return root;
     }
-    public void insert(nodo nodo, String dato, String padre) {
+   /* public void insert(nodo nodo, String dato, String padre) {
         int i = 0;
         boolean ban = true;
         nodo nuevo;
@@ -25,9 +25,9 @@ public class graph {
                     insert(nodo.children.get(i), dato, padre);
             }
         }
-    }
+    }*/
     nodo nodo=null;
-    public nodo search(nodo search,nodo root){
+   /* public nodo search(nodo search,nodo root){
         int i=0;
         boolean ban=true;
         nodo nuevo;
@@ -40,5 +40,5 @@ public class graph {
 
         }
         return nodo;
-    }
+    }*/
 }

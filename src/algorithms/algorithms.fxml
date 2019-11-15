@@ -23,9 +23,13 @@
             <HBox alignment="CENTER" spacing="5">
             <Button fx:id="btnBFS" text="BFS" ></Button>
             <Button fx:id="btnDFS" text="DFS" ></Button>
+                <Button fx:id="btnUCS" text="UCS" ></Button>
             </HBox>
             <HBox alignment="CENTER" spacing="5">
-                <VBox alignment="CENTER" spacing="5"><Label text="Data"></Label>
+                <VBox alignment="CENTER" spacing="5">
+                    <HBox alignment="CENTER" spacing="5"><Label text="Data"></Label>
+                        <Label fx:id="lbl" text="" style="-fx-text-fill: green"></Label>
+                    </HBox>
                 <TextArea fx:id="txaA" editable="false" text="Read"></TextArea>
                 </VBox>
                 <VBox alignment="CENTER" spacing="5">
